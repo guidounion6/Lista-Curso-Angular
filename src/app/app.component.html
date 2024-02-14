@@ -1,0 +1,7 @@
+<div class="container mt-5">
+    <Tabla-Cursos *ngIf="!cursos"></Tabla-Cursos>
+    <Tabla-Alumnos *ngIf="cursos" ></Tabla-Alumnos>
+    <button class="btn btn-primary" (click)="handleChange()">Cambiar de tabla</button>   
+</div>
+
+
